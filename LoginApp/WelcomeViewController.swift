@@ -15,12 +15,8 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = username
+        label.text = "Hello, dear " + username + "!"
     
     }
-    
 
-    @IBAction func logOutAction() {
-        dismiss(animated: true)
-    }
 }

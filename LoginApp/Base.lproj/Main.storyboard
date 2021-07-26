@@ -133,7 +133,6 @@
                                             <color key="titleColor" systemColor="linkColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="logOutAction" destination="cTE-Vu-1qi" eventType="touchUpInside" id="hcH-2s-AQM"/>
                                             <segue destination="neb-28-M7m" kind="unwind" unwindAction="unwindSegueWithSegue:" id="Pf2-GK-Cv9"/>
                                         </connections>
                                     </button>

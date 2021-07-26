@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.username = "Hello, dear " + usernameTextField.text! + " !"
+        welcomeVC.username = usernameTextField.text!
     }
     
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
