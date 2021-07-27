@@ -1,5 +1,5 @@
 //
-//  UserInfoViewController.swift
+//  ImageViewController.swift
 //  LoginApp
 //
 //  Created by Robert Miller on 27.07.2021.
@@ -7,9 +7,13 @@
 
 import UIKit
 
-class UserInfoViewController: UIViewController {
-  
+class ImageViewController: UIViewController {
     
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            imageView.layer.cornerRadius = 40
+        }
+    }
     private let primaryColor = UIColor(
         red: 239/255, //0, 201, 255
         green: 78/255,
@@ -21,18 +25,14 @@ class UserInfoViewController: UIViewController {
         green: 203/255,
         blue: 196/255,
         alpha: 1
-
     )
     
     var user: User!
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let imageVC = segue.destination as? ImageViewController else { return }
-        imageVC.user = self.user
-    }
-    override func viewDidLoad() {
-        title = user.person.fullname
+    override func viewDidLayoutSubviews() {
+        imageView.image = UIImage(named: user.person.image)
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
     }
+    
+    
 
 }

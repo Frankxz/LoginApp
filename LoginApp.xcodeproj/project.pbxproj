@@ -17,6 +17,7 @@
 		C6E7438526AFF33B00FF8A10 /* GradientExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7438426AFF33B00FF8A10 /* GradientExtenstion.swift */; };
 		C6E7438D26AFF7B100FF8A10 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7438C26AFF7B100FF8A10 /* User.swift */; };
 		C6E7439026B00AA000FF8A10 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7438F26B00AA000FF8A10 /* UserInfoViewController.swift */; };
+		C6E7439226B0278700FF8A10 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7439126B0278700FF8A10 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C6E7438426AFF33B00FF8A10 /* GradientExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientExtenstion.swift; sourceTree = "<group>"; };
 		C6E7438C26AFF7B100FF8A10 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C6E7438F26B00AA000FF8A10 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		C6E7439126B0278700FF8A10 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = LoginApp/StoryBoards/ImageViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		C6E7438626AFF51E00FF8A10 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C6E7439126B0278700FF8A10 /* ImageViewController.swift */,
 				C6AA23EC26AD4D2F0086AC21 /* LoginViewController.swift */,
 				C6E7438F26B00AA000FF8A10 /* UserInfoViewController.swift */,
 				C6AA23FC26AD782F0086AC21 /* WelcomeViewController.swift */,
@@ -203,6 +206,7 @@
 				C6E7438D26AFF7B100FF8A10 /* User.swift in Sources */,
 				C6AA23E926AD4D2F0086AC21 /* AppDelegate.swift in Sources */,
 				C6E7438526AFF33B00FF8A10 /* GradientExtenstion.swift in Sources */,
+				C6E7439226B0278700FF8A10 /* ImageViewController.swift in Sources */,
 				C6AA23EB26AD4D2F0086AC21 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

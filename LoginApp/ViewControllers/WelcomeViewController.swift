@@ -8,18 +8,18 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-    @IBOutlet weak var label: UILabel!
     
+    @IBOutlet weak var nameLabel: UILabel!
     private let primaryColor = UIColor(
-        red: 250/255,
-        green: 112/255,
-        blue: 154/255,
+        red: 239/255, //0, 201, 255
+        green: 78/255,
+        blue: 73/255,
         alpha: 1
     )
     private let secondaryColor = UIColor(
-        red: 254/255,
-        green: 225/255,
-        blue: 64/255,
+        red: 246/255,
+        green: 203/255,
+        blue: 196/255,
         alpha: 1
     )
     
@@ -28,7 +28,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        label.text = "Hello, " + user.person.fullname + "!"
+        nameLabel.text = user.person.fullname + "!"
     
     }
 
