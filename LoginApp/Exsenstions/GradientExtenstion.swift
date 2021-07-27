@@ -11,7 +11,7 @@ import UIKit
 extension UIView {
     func getPrimaryColor() -> UIColor {
       UIColor ( red: 253/255, //0, 201, 255
-                green: 133/255,
+                green: 203/255,
                 blue: 133/255,
                 alpha: 1 )
     }

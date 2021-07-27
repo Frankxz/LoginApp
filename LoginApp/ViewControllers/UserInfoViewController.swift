@@ -8,7 +8,7 @@
 import UIKit
 
 class UserInfoViewController: UIViewController {
-    
+
     var user: User!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -17,7 +17,7 @@ class UserInfoViewController: UIViewController {
     }
     override func viewDidLoad() {
         title = user.person.fullname
-        view.addVerticalGradientLayer(topColor: view.getPrimaryColor(), bottomColor: view.getSecondaryColor())
+                view.addVerticalGradientLayer(topColor: view.getPrimaryColor(), bottomColor: view.getSecondaryColor())
     }
 
 }
