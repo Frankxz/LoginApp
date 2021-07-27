@@ -14,6 +14,7 @@
 		C6AA23F226AD4D300086AC21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AA23F126AD4D300086AC21 /* Assets.xcassets */; };
 		C6AA23F526AD4D300086AC21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AA23F326AD4D300086AC21 /* LaunchScreen.storyboard */; };
 		C6AA23FD26AD782F0086AC21 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA23FC26AD782F0086AC21 /* WelcomeViewController.swift */; };
+		C6E7438526AFF33B00FF8A10 /* GradientExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7438426AFF33B00FF8A10 /* GradientExtenstion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C6AA23F426AD4D300086AC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6AA23F626AD4D300086AC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6AA23FC26AD782F0086AC21 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		C6E7438426AFF33B00FF8A10 /* GradientExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientExtenstion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C6AA23F126AD4D300086AC21 /* Assets.xcassets */,
 				C6AA23F326AD4D300086AC21 /* LaunchScreen.storyboard */,
 				C6AA23F626AD4D300086AC21 /* Info.plist */,
+				C6E7438426AFF33B00FF8A10 /* GradientExtenstion.swift */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				C6AA23ED26AD4D2F0086AC21 /* LoginViewController.swift in Sources */,
 				C6AA23FD26AD782F0086AC21 /* WelcomeViewController.swift in Sources */,
 				C6AA23E926AD4D2F0086AC21 /* AppDelegate.swift in Sources */,
+				C6E7438526AFF33B00FF8A10 /* GradientExtenstion.swift in Sources */,
 				C6AA23EB26AD4D2F0086AC21 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

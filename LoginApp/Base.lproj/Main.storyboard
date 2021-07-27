@@ -44,7 +44,7 @@
                                         </state>
                                         <connections>
                                             <action selector="loginAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="1QQ-dr-GPa"/>
-                                            <segue destination="cTE-Vu-1qi" kind="show" identifier="showWelcomeVC" id="bNX-sI-iTw"/>
+                                            <segue destination="cTE-Vu-1qi" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="bNX-sI-iTw"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="V6V-Ig-xdN">
@@ -97,11 +97,11 @@
             <objects>
                 <viewController id="cTE-Vu-1qi" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uQL-uT-QLy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="fom-1e-uBZ">
-                                <rect key="frame" x="98.5" y="218" width="217" height="406"/>
+                                <rect key="frame" x="98.5" y="245" width="217" height="406"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-7Y-sd5">
                                         <rect key="frame" x="0.0" y="0.0" width="217" height="253"/>
@@ -149,7 +149,6 @@
                     <navigationItem key="navigationItem" id="bsf-PA-bdF"/>
                     <connections>
                         <outlet property="label" destination="sbn-Z6-Tp5" id="JUz-1b-EvO"/>
-                        <outlet property="logOutButton" destination="R50-XO-5r2" id="YoQ-dH-92t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgp-Gs-8Kl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
