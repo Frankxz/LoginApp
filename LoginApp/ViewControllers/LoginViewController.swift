@@ -15,8 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var forgotUsernameButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
-    private let user = "Robert"
-    private let password = "12345"
+    private let user = User.getUserData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +25,19 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.username = usernameTextField.text!
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
+       
+        
+        viewControllers.forEach {
+            if let welcomeVC = $0 as? WelcomeViewController {
+                welcomeVC.user = user
+            } else if let navigationVC = $0 as? UINavigationController {
+                let userInfoVC = navigationVC.topViewController as! UserInfoViewController
+                userInfoVC.user = user
+            }
+        }
+       
     }
     
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
@@ -36,15 +46,15 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func forgotUsernameAction() {
-        showAlert(title: "Ooops!", message: "Your username is Robert")
+        showAlert(title: "Ooops!", message: "Your username is \(user.username)")
     }
     @IBAction func forgotPasswordAction() {
-        showAlert(title: "Ooops!", message: "Your password is 12345")
+        showAlert(title: "Ooops!", message: "Your password is \(user.password)")
     }
     
     @IBAction func loginAction() {
-        if usernameTextField.text != user
-        || passwordTextField.text != password{
+        if usernameTextField.text != user.username
+            || passwordTextField.text != user.password{
             showAlert(title: "Username or password is incorrect",
                       message: "Please, enter correct login and password")
         return

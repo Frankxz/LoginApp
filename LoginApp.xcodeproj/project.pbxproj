@@ -15,6 +15,8 @@
 		C6AA23F526AD4D300086AC21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AA23F326AD4D300086AC21 /* LaunchScreen.storyboard */; };
 		C6AA23FD26AD782F0086AC21 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA23FC26AD782F0086AC21 /* WelcomeViewController.swift */; };
 		C6E7438526AFF33B00FF8A10 /* GradientExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7438426AFF33B00FF8A10 /* GradientExtenstion.swift */; };
+		C6E7438D26AFF7B100FF8A10 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7438C26AFF7B100FF8A10 /* User.swift */; };
+		C6E7439026B00AA000FF8A10 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7438F26B00AA000FF8A10 /* UserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C6AA23F626AD4D300086AC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6AA23FC26AD782F0086AC21 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		C6E7438426AFF33B00FF8A10 /* GradientExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientExtenstion.swift; sourceTree = "<group>"; };
+		C6E7438C26AFF7B100FF8A10 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C6E7438F26B00AA000FF8A10 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +64,67 @@
 		C6AA23E726AD4D2F0086AC21 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				C6AA23E826AD4D2F0086AC21 /* AppDelegate.swift */,
-				C6AA23EA26AD4D2F0086AC21 /* SceneDelegate.swift */,
-				C6AA23EC26AD4D2F0086AC21 /* LoginViewController.swift */,
-				C6AA23EE26AD4D2F0086AC21 /* Main.storyboard */,
-				C6AA23FC26AD782F0086AC21 /* WelcomeViewController.swift */,
-				C6AA23F126AD4D300086AC21 /* Assets.xcassets */,
-				C6AA23F326AD4D300086AC21 /* LaunchScreen.storyboard */,
-				C6AA23F626AD4D300086AC21 /* Info.plist */,
-				C6E7438426AFF33B00FF8A10 /* GradientExtenstion.swift */,
+				C6E7438726AFF55B00FF8A10 /* SupportFiles */,
+				C6E7438626AFF51E00FF8A10 /* ViewControllers */,
+				C6E7438826AFF61D00FF8A10 /* StoryBoards */,
+				C6E7438926AFF63400FF8A10 /* Resources */,
+				C6E7438A26AFF67D00FF8A10 /* Exsenstions */,
+				C6E7438E26AFF7BA00FF8A10 /* Models */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		C6E7438626AFF51E00FF8A10 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6AA23EC26AD4D2F0086AC21 /* LoginViewController.swift */,
+				C6E7438F26B00AA000FF8A10 /* UserInfoViewController.swift */,
+				C6AA23FC26AD782F0086AC21 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C6E7438726AFF55B00FF8A10 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C6AA23E826AD4D2F0086AC21 /* AppDelegate.swift */,
+				C6AA23EA26AD4D2F0086AC21 /* SceneDelegate.swift */,
+				C6AA23F626AD4D300086AC21 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		C6E7438826AFF61D00FF8A10 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				C6AA23EE26AD4D2F0086AC21 /* Main.storyboard */,
+				C6AA23F326AD4D300086AC21 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		C6E7438926AFF63400FF8A10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C6AA23F126AD4D300086AC21 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C6E7438A26AFF67D00FF8A10 /* Exsenstions */ = {
+			isa = PBXGroup;
+			children = (
+				C6E7438426AFF33B00FF8A10 /* GradientExtenstion.swift */,
+			);
+			path = Exsenstions;
+			sourceTree = "<group>";
+		};
+		C6E7438E26AFF7BA00FF8A10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C6E7438C26AFF7B100FF8A10 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6AA23ED26AD4D2F0086AC21 /* LoginViewController.swift in Sources */,
+				C6E7439026B00AA000FF8A10 /* UserInfoViewController.swift in Sources */,
 				C6AA23FD26AD782F0086AC21 /* WelcomeViewController.swift in Sources */,
+				C6E7438D26AFF7B100FF8A10 /* User.swift in Sources */,
 				C6AA23E926AD4D2F0086AC21 /* AppDelegate.swift in Sources */,
 				C6E7438526AFF33B00FF8A10 /* GradientExtenstion.swift in Sources */,
 				C6AA23EB26AD4D2F0086AC21 /* SceneDelegate.swift in Sources */,
@@ -296,7 +352,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5QL6TNF9LL;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +371,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5QL6TNF9LL;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

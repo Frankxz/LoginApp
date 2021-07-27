@@ -9,7 +9,6 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
-    var username = ""
     
     private let primaryColor = UIColor(
         red: 250/255,
@@ -24,10 +23,12 @@ class WelcomeViewController: UIViewController {
         alpha: 1
     )
     
+    var user: User!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        label.text = "Hello, dear " + username + "!"
+        label.text = "Hello, " + user.person.fullname + "!"
     
     }
 
