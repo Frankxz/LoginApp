@@ -17,17 +17,17 @@ class WelcomeViewController: UIViewController {
         alpha: 1
     )
     private let secondaryColor = UIColor(
-        red: 246/255,
-        green: 203/255,
-        blue: 196/255,
-        alpha: 1
+        red: 255/255,
+        green: 78/255,
+        blue: 80/255,
+        alpha: 0.3
     )
     
     var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        view.addVerticalGradientLayer(topColor: view.getPrimaryColor(), bottomColor: view.getSecondaryColor())
         nameLabel.text = user.person.fullname + "!"
     
     }
