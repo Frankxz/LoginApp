@@ -27,7 +27,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addVerticalGradientLayer(topColor: view.getPrimaryColor(), bottomColor: view.getSecondaryColor())
+        //view.addVerticalGradientLayer(topColor: view.getPrimaryColor(), bottomColor: view.getSecondaryColor())
         nameLabel.text = user.person.fullname + "!"
     
     }

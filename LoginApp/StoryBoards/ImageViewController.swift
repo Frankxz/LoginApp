@@ -11,7 +11,7 @@ class ImageViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView! {
         didSet {
-            imageView.layer.cornerRadius = 40
+            imageView.layer.cornerRadius = 20
         }
     }
     
@@ -19,7 +19,7 @@ class ImageViewController: UIViewController {
     var user: User!
     override func viewDidLayoutSubviews() {
         imageView.image = UIImage(named: user.person.image)
-        view.addVerticalGradientLayer(topColor: view.getPrimaryColor(), bottomColor: view.getSecondaryColor())
+       // view.addVerticalGradientLayer(topColor: view.getPrimaryColor(), bottomColor: view.getSecondaryColor())
     }
     
     
