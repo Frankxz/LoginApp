@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
     //MARK: - outlets
     
     @IBOutlet weak var usernameTextField: UITextField!
@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarController = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarController.viewControllers else { return }
-       
+        tabBarController.tabBar.barTintColor = .systemYellow
         
         viewControllers.forEach {
             if let welcomeVC = $0 as? WelcomeViewController {
@@ -39,27 +39,29 @@ class LoginViewController: UIViewController {
                 userInfoVC.user = user
             }
         }
-       
+        
     }
     
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
         usernameTextField.text = ""
         passwordTextField.text = ""
     }
-
+    
+    
     @IBAction func forgotUsernameAction() {
         showAlert(title: "Ooops!", message: "Your username is \(user.username)")
     }
+    
+    
     @IBAction func forgotPasswordAction() {
         showAlert(title: "Ooops!", message: "Your password is \(user.password)")
     }
     
+    
     @IBAction func loginAction() {
-        if usernameTextField.text != user.username
-            || passwordTextField.text != user.password{
-            showAlert(title: "Username or password is incorrect",
-                      message: "Please, enter correct login and password")
-        return
+        if usernameTextField.text != user.username || passwordTextField.text != user.password {
+            showAlert(title: "Username or password is incorrect", message: "Please, enter correct login and password")
+            return
         }
         performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
@@ -70,7 +72,7 @@ extension LoginViewController {
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-        self.passwordTextField.text = "" }
+            self.passwordTextField.text = "" }
         alert.addAction(okAction)
         present(alert, animated: true)
     }

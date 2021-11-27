@@ -9,17 +9,15 @@ import UIKit
 
 class ImageViewController: UIViewController {
     
-    @IBOutlet weak var imageView: UIImageView! {
-        didSet {
-            imageView.layer.cornerRadius = 20
-        }
-    }
-    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var fullnameLabel: UILabel!
     
     var user: User!
     override func viewDidLayoutSubviews() {
+        imageView.layer.cornerRadius = 20
         imageView.image = UIImage(named: user.person.image)
-       // view.addVerticalGradientLayer(topColor: view.getPrimaryColor(), bottomColor: view.getSecondaryColor())
+        fullnameLabel.text = user.person.fullname
+     
     }
     
     
