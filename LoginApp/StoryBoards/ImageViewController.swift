@@ -17,9 +17,5 @@ class ImageViewController: UIViewController {
         imageView.layer.cornerRadius = 20
         imageView.image = UIImage(named: user.person.image)
         fullnameLabel.text = user.person.fullname
-     
     }
-    
-    
-
 }
