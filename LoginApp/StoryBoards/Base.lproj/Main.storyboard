@@ -238,33 +238,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="lazy" translatesAutoresizingMaskIntoConstraints="NO" id="CWY-BP-aZT">
-                                <rect key="frame" x="30" y="140" width="315" height="315"/>
+                                <rect key="frame" x="37" y="140" width="300" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="CWY-BP-aZT" secondAttribute="height" multiplier="1:1" id="PYR-fb-uhv"/>
+                                    <constraint firstAttribute="width" secondItem="CWY-BP-aZT" secondAttribute="height" multiplier="5:3" id="wsY-uJ-V48"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0i-8T-sWJ">
-                                <rect key="frame" x="20" y="497" width="335" height="24"/>
+                                <rect key="frame" x="20" y="573" width="335" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7g-6N-dn5">
+                                <rect key="frame" x="0.0" y="368" width="375" height="165"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="z7g-6N-dn5" secondAttribute="height" multiplier="25:11" id="cKH-HD-kFQ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PjN-Ny-0vR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="p0i-8T-sWJ" firstAttribute="top" secondItem="CWY-BP-aZT" secondAttribute="bottom" constant="42" id="2Fp-3h-P65"/>
-                            <constraint firstItem="PjN-Ny-0vR" firstAttribute="trailing" secondItem="CWY-BP-aZT" secondAttribute="trailing" constant="30" id="3f0-9b-U7F"/>
+                            <constraint firstItem="PjN-Ny-0vR" firstAttribute="trailing" secondItem="CWY-BP-aZT" secondAttribute="trailing" constant="38" id="3f0-9b-U7F"/>
                             <constraint firstItem="p0i-8T-sWJ" firstAttribute="leading" secondItem="PjN-Ny-0vR" secondAttribute="leading" constant="20" id="BlO-UC-lwB"/>
+                            <constraint firstItem="z7g-6N-dn5" firstAttribute="trailing" secondItem="PjN-Ny-0vR" secondAttribute="trailing" id="F76-HZ-WOc"/>
                             <constraint firstItem="PjN-Ny-0vR" firstAttribute="trailing" secondItem="p0i-8T-sWJ" secondAttribute="trailing" constant="20" id="JtB-E7-643"/>
-                            <constraint firstItem="CWY-BP-aZT" firstAttribute="leading" secondItem="PjN-Ny-0vR" secondAttribute="leading" constant="30" id="MEt-ky-wHc"/>
+                            <constraint firstItem="CWY-BP-aZT" firstAttribute="leading" secondItem="PjN-Ny-0vR" secondAttribute="leading" constant="37" id="MEt-ky-wHc"/>
+                            <constraint firstItem="z7g-6N-dn5" firstAttribute="top" secondItem="CWY-BP-aZT" secondAttribute="bottom" constant="48" id="P87-tR-qbx"/>
                             <constraint firstItem="CWY-BP-aZT" firstAttribute="top" secondItem="PjN-Ny-0vR" secondAttribute="top" id="Prg-zT-N54"/>
+                            <constraint firstItem="z7g-6N-dn5" firstAttribute="leading" secondItem="PjN-Ny-0vR" secondAttribute="leading" id="fAc-q6-Hag"/>
+                            <constraint firstItem="p0i-8T-sWJ" firstAttribute="top" secondItem="z7g-6N-dn5" secondAttribute="bottom" constant="40" id="uet-sM-Prw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ksH-d1-k1m"/>
                     <connections>
                         <outlet property="fullnameLabel" destination="p0i-8T-sWJ" id="o3W-xk-PEd"/>
+                        <outlet property="gradientView" destination="z7g-6N-dn5" id="7r3-kB-W7C"/>
                         <outlet property="imageView" destination="CWY-BP-aZT" id="Yko-FW-wqC"/>
                     </connections>
                 </viewController>
@@ -304,6 +320,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
